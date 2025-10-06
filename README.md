@@ -245,25 +245,6 @@ contract GaslessTransferRelay {
 4. **Layer 2**: Deploy on Polygon, Arbitrum, Optimism
 5. **Signature Optimization**: Use compact signatures (EIP-2098)
 
-## Economic Model
-
-### Revenue Streams
-1. **Gas Fee Markup**: Add 5-10% to actual gas cost
-2. **Premium Features**: Priority processing, larger transfers
-3. **API Access**: Developer tiers
-
-### Cost Management
-1. **Dynamic Gas Pricing**: Adjust relayer behavior based on gas prices
-2. **Token Liquidation**: Auto-convert collected tokens to ETH
-3. **Reserve Fund**: Maintain buffer for gas price spikes
-
-## Scalability Considerations
-
-### High-Volume Optimization
-- **Multiple Relayers**: Distribute load across relayer nodes
-- **Transaction Batching**: Combine transfers when possible
-- **Queue Management**: Priority queuing based on fees
-- **Caching**: Cache token prices, gas estimates
 
 ### Multi-Chain Support
 - Deploy on multiple EVM chains
@@ -309,29 +290,3 @@ contract GaslessTransferRelay {
 - wagmi/viem
 - Web3Modal for wallet connection
 
-### Infrastructure
-- AWS/GCP for hosting
-- Infura/Alchemy for RPC
-- The Graph for indexing
-- Sentry for error tracking
-
-## Deployment Checklist
-
-- [ ] Smart contract audits (2+ firms)
-- [ ] Testnet deployment and testing
-- [ ] Relayer infrastructure setup
-- [ ] Oracle integration and testing
-- [ ] Frontend SDK development
-- [ ] Documentation
-- [ ] Bug bounty program
-- [ ] Gradual mainnet rollout
-- [ ] Token whitelist creation
-- [ ] Emergency procedures documented
-
-## Future Enhancements
-
-1. **Cross-Chain Transfers**: Bridge integration
-2. **Gasless Swaps**: Combine with DEX aggregators
-3. **Recurring Payments**: Subscription-based transfers
-4. **Social Recovery**: Gasless wallet recovery
-5. **Account Abstraction**: EIP-4337 integration
